@@ -1,0 +1,848 @@
+@font-face {
+    font-family: "Hero";
+    src: url("Hero.eot?") format("eot"), url("Hero.woff") format("woff"), url("Hero.ttf") format("truetype"), url("Hero.svg#Hero") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gangitem";
+    src: url("../Tipografías/Gangitem.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* inicio header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* fin header*/
+
+/* inicio menu Mobile*/
+nav ul li {
+    padding-left: 25px;
+}
+
+nav a:hover {
+    color: #d2e809;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+
+}
+
+.menu {
+    display: flex;
+    font-family: "Hero";
+    list-style-type: none;
+    font-size: 13px;
+    color: #9061AC;
+}
+
+/* fin menu Mobile*/
+
+/* media queries menu*/
+@media only screen and (min-width: 768px) {
+    .menu {
+        font-size: 20px;
+    }
+
+    .logo {
+        scale: 150%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .menu {
+        font-size: 30px;
+    }
+
+    .logo {
+        scale: 200%;
+    }
+}
+
+/* fin media queries menu*/
+
+/* inicio footer*/
+footer {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer-1 {
+    font-family: "Gangitem";
+    font-size: 0.7cm;
+    color: #9061AC;
+}
+
+.footer-2 {
+    font-family: "Hero";
+    font-size: 0.3cm;
+    line-height: 20px;
+    color: #b48ad1;
+}
+
+/* fin footer*/
+
+/* media queries footer*/
+@media only screen and (min-width: 768px) {
+    .footer-1 {
+        font-size: 1.5cm;
+    }
+
+    .footer-2 {
+        font-size: 0.7cm;
+        line-height: 40px;
+    }
+
+    footer {
+        margin-left: 50px;
+    }
+}
+
+/* fin media queries footer*/
+
+/*inicio index Mobile*/
+.index {
+    background-image: url("../imagenes/background-index.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.tituloIndex {
+    font-family: "Gangitem";
+    text-align: right;
+    line-height: -5;
+    color: #9061AC;
+    font-size: 2cm;
+}
+
+.subtituloIndex {
+    font-family: "Hero";
+    text-align: right;
+    color: #9061AC;
+    font-size: 100%;
+    margin-top: 15px;
+}
+
+.parrafoPresentacion {
+    font-family: "Hero";
+    font-size: 0.4cm;
+    color: #9061AC;
+    margin-top: 40px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "Hero";
+    font-size: 0.7cm;
+    color: #9061AC;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.flexIndex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flexIndex>img {
+    width: 100%;
+    height: 100%;
+}
+
+.tiktok {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-1 {
+    max-height: 900px;
+    max-width: 900px;
+}
+
+.img-2 {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+/*fin index Mobile*/
+
+/*Media queries index*/
+
+@media only screen and (min-width: 481px) {
+    .tituloIndex {
+        font-size: 3cm;
+    }
+
+    .subtituloIndex {
+        font-size: 1cm;
+        margin-top: 15px;
+    }
+
+    .parrafoPresentacion {
+        font-size: 0.8cm;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 1cm;
+    }
+
+    .img-2 {
+        max-height: 400px;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tituloIndex {
+        font-size: 4cm;
+    }
+
+    .subtituloIndex {
+        font-size: 1.5cm;
+        margin-top: 15px;
+    }
+
+    .parrafoPresentacion {
+        font-size: 1cm;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 1.5cm;
+    }
+
+    .img-1 {
+        padding: 20px;
+    }
+
+    .img-2 {
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tituloIndex {
+        font-size: 5cm;
+    }
+
+    .subtituloIndex {
+        font-size: 2cm;
+        margin-top: 15px;
+    }
+
+    .parrafoPresentacion {
+        font-size: 1.5cm;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 2cm;
+        margin-bottom: 40px;
+    }
+
+    .img-2 {
+        max-height: 600px;
+        max-width: 600px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .tituloIndex {
+        font-size: 5cm;
+    }
+
+    .subtituloIndex {
+        font-size: 2.5cm;
+        margin-top: 15px;
+    }
+
+    .img-1 {
+        margin-left: 50px;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .img-2 {
+        max-height: 800px;
+        max-width: 800px;
+    }
+}
+
+/*fin media queries index*/
+
+/* inicio quien_soy*/
+.quienSoy {
+    background-image: url(../imagenes/background-quiensoy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parrafoQuienSoy,
+.parrafoQuienSoy1,
+.parrafoQuienSoy2,
+.parrafoQuienSoy3 {
+    text-shadow: #9061AC;
+    font-family: "Hero";
+    font-size: 0.4cm;
+    color: #9061AC;
+    margin-left: 15px;
+}
+
+.tituloQuienSoy {
+    font-family: "Hero";
+    font-size: 30px;
+    color: #9061AC;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.img-3,
+.img-4,
+.img-5,
+.img-6 {
+    width: 100%;
+    height: 100%;
+}
+
+.img-3 {
+    max-width: 600px;
+}
+
+.gridQuienSoy {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "img-4 texto4"
+        "img-5 texto5"
+        "img-6 texto6";
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+.img-5 {
+    grid-area: img-5;
+}
+
+.img-6 {
+    grid-area: img-6;
+}
+
+.parrafoQuienSoy1 {
+    grid-area: texto4;
+}
+
+.parrafoQuienSoy2 {
+    grid-area: texto5;
+}
+
+.parrafoQuienSoy3 {
+    grid-area: texto6;
+}
+
+.dondeEstoy {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* fin quien_soy*/
+
+/* media queries quien_soy*/
+@media only screen and (min-width: 481px) {
+
+    .parrafoQuienSoy,
+    .parrafoQuienSoy1,
+    .parrafoQuienSoy2,
+    .parrafoQuienSoy3 {
+        font-size: 0.5cm;
+    }
+
+    .img-3 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .gridQuienSoy {
+        grid-row-gap: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .parrafoQuienSoy,
+    .parrafoQuienSoy1,
+    .parrafoQuienSoy2,
+    .parrafoQuienSoy3 {
+        font-size: 0.6cm;
+    }
+
+    .tituloQuienSoy {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .img-3 {
+        margin-bottom: 35px;
+        margin-top: 35px;
+        padding: 20px;
+    }
+
+    .parrafoQuienSoy,
+    .parrafoQuienSoy1,
+    .parrafoQuienSoy2,
+    .parrafoQuienSoy3 {
+        font-size: 0.7cm;
+    }
+
+    .dondeEstoy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .parrafoQuienSoy,
+    .parrafoQuienSoy1,
+    .parrafoQuienSoy2,
+    .parrafoQuienSoy3 {
+        font-size: 0.8cm;
+    }
+
+    .gridQuienSoy {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .dondeEstoy {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+/* fin media queries quien_soy*/
+
+/*inicio agendar*/
+.agendar {
+    background-image: url(../imagenes/background-agendar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tituloAgendar {
+    font-family: "Gangitem";
+    color: #9061AC;
+    font-size: 2cm;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+form {
+    margin-left: 15px;
+}
+
+.parrafoAgendar {
+    font-family: "Hero";
+    color: #9061AC;
+    font-size: 0.7cm;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.botonAgendar {
+    font-family: "Gangitem";
+    font-size: 0.7;
+    margin-top: 10px;
+    color: #9061AC;
+}
+
+/*fin agendar*/
+
+/*media queries agendar*/
+@media only screen and (min-width: 768px) {
+    .tituloAgendar {
+        font-size: 3.5cm;
+        margin-bottom: 40px;
+        margin-left: 50px;
+    }
+
+    form {
+        margin-left: 50px;
+    }
+}
+
+/*fin media queries agendar*/
+
+/*inicio servicios*/
+.servicios {
+    background-image: url(../imagenes/background-servicios.png);
+    background-size: cover;
+}
+
+.subtituloServicios1,
+.subtituloServicios2,
+.subtituloServicios3,
+.subtituloServicios4 {
+    font-family: "Hero";
+    font-size: 20px;
+    color: #9061AC;
+    margin-left: 25px;
+}
+
+.parrafoServicios1,
+.parrafoServicios2,
+.parrafoServicios3,
+.parrafoServicios4 {
+    text-align: left;
+    text-shadow: #9061AC;
+    font-family: "Hero";
+    font-size: 0.4cm;
+    color: #b48ad1;
+    margin-left: 25px;
+}
+
+.parrafoPrecio1,
+.parrafoPrecio2,
+.parrafoPrecio3,
+.parrafoPrecio4 {
+    font-family: "Hero";
+    color: #b48ad1;
+    font-size: 0.4cm;
+    margin-left: 25px;
+    align-content: end;
+}
+
+.gridServicios1 {
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "foto1 subtituloServicios1"
+        "foto1 parrafoServicios1"
+        "foto1 parrafoPrecio1"
+}
+
+.gridServicios2 {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "foto2 subtituloServicios2"
+        "foto2 parrafoServicios2"
+        "foto2 parrafoPrecio2"
+
+}
+
+.gridServicios3 {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "foto3 subtituloServicios3"
+        "foto3 parrafoServicios3"
+        "foto3 parrafoPrecio3"
+}
+
+.gridServicios4 {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "foto4 subtituloServicios4"
+        "foto4 parrafoServicios4"
+        "foto4 parrafoPrecio4"
+}
+
+.img-9 {
+    grid-area: foto1;
+    margin-left: 15px;
+    max-width: 350px;
+}
+
+.img-7 {
+    grid-area: foto2;
+    margin-left: 15px;
+    max-width: 350px;
+}
+
+.img-8 {
+    grid-area: foto3;
+    margin-left: 15px;
+    max-width: 350px;
+}
+
+.img-10 {
+    grid-area: foto4;
+    margin-left: 15px;
+    max-width: 350px;
+}
+
+.subtituloServicios1 {
+    grid-area: subtituloServicios1;
+}
+
+.subtituloServicios2 {
+    grid-area: subtituloServicios2;
+}
+
+.subtituloServicios3 {
+    grid-area: subtituloServicios3;
+}
+
+.subtituloServicios4 {
+    grid-area: subtituloServicios4;
+}
+
+.parrafoServicios1 {
+    grid-area: parrafoServicios1;
+}
+
+.parrafoServicios2 {
+    grid-area: parrafoServicios2;
+}
+
+.parrafoServicios3 {
+    grid-area: parrafoServicios3;
+}
+
+.parrafoServicios4 {
+    grid-area: parrafoServicios4;
+}
+
+.parrafoPrecio1 {
+    grid-area: parrafoPrecio1;
+}
+
+.parrafoPrecio2 {
+    grid-area: parrafoPrecio2;
+}
+
+.parrafoPrecio3 {
+    grid-area: parrafoPrecio3;
+}
+
+.parrafoPrecio4 {
+    grid-area: parrafoPrecio4;
+}
+
+.gridServicios1>img {
+    width: 100%;
+    height: 100%;
+}
+
+.gridServicios2>img {
+    width: 100%;
+    height: 100%;
+}
+
+.gridServicios3>img {
+    width: 100%;
+    height: 100%;
+}
+
+.gridServicios4>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*fin servicios*/
+
+/*media queries servicios*/
+@media only screen and (min-width: 481px) {
+
+    .subtituloServicios1,
+    .subtituloServicios2,
+    .subtituloServicios3,
+    .subtituloServicios4 {
+        font-size: 30px;
+    }
+
+    .parrafoServicios1,
+    .parrafoServicios2,
+    .parrafoServicios3,
+    .parrafoServicios4 {
+        font-size: 0.6cm;
+    }
+
+    .parrafoPrecio1,
+    .parrafoPrecio2,
+    .parrafoPrecio3,
+    .parrafoPrecio4 {
+        font-size: 0.6cm;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .subtituloServicios1,
+    .subtituloServicios2,
+    .subtituloServicios3,
+    .subtituloServicios4 {
+        font-size: 40px;
+    }
+
+    .parrafoServicios1,
+    .parrafoServicios2,
+    .parrafoServicios3,
+    .parrafoServicios4 {
+        font-size: 0.7cm;
+    }
+
+    .parrafoPrecio1,
+    .parrafoPrecio2,
+    .parrafoPrecio3,
+    .parrafoPrecio4 {
+        font-size: 0.7cm;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .subtituloServicios1,
+    .subtituloServicios2,
+    .subtituloServicios3,
+    .subtituloServicios4 {
+        font-size: 60px;
+    }
+
+    .parrafoServicios1,
+    .parrafoServicios2,
+    .parrafoServicios3,
+    .parrafoServicios4 {
+        font-size: 0.9cm;
+    }
+
+    .parrafoPrecio1,
+    .parrafoPrecio2,
+    .parrafoPrecio3,
+    .parrafoPrecio4 {
+        font-size: 0.9cm;
+    }
+
+    .img-9 {
+        margin-left: 50px;
+    }
+
+    .img-7 {
+        margin-left: 50px;
+    }
+
+    .img-8 {
+        margin-left: 50px;
+    }
+
+    .img-10 {
+        margin-left: 50px;
+    }
+}
+
+/*fin media queries servicios*/
+
+/*inicio galería*/
+.tituloGaleria {
+    font-family: "Gangitem";
+    color: #9061AC;
+    font-size: 2cm;
+    margin-bottom: 20px;
+}
+
+.gridGaleriaMobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin-bottom: 15px;
+}
+
+.gridGaleriaDesktop {
+    display: none;
+}
+
+.gridGaleriaMobile>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*fin galería*/
+
+/*media queries galeria*/
+@media only screen and (min-width: 768px) {
+    .tituloGaleria {
+        font-family: "Gangitem";
+        color: #9061AC;
+        font-size: 3.5cm;
+        margin-bottom: 40px;
+    }
+
+    .gridGaleriaDesktop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .gridGaleriaMobile {
+        display: none;
+    }
+
+    .gridGaleriaDesktop>img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/*fin media queries galeria*/
