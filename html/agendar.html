@@ -7,6 +7,7 @@
     <title>Agustina Iudica</title>
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="agendar">
     <header class="header">
@@ -24,13 +25,13 @@
         </nav>        
         <!--Fin menú de navegación-->
             </header>
-    <h1 class="tituloAgendar">agendá tu turno</h1>
+    <h1 class="tituloAgendar" data-aos="fade-up" data-aos-duration="1000">agendá tu turno</h1>
     <!--Inicio formulario-->
-    <form action="">
-        <p class="parrafoAgendar">cuántas personas?:</p>
-        <input type="number" name="personas" id="personas" min="1" max="10">        
+    <form action="" data-aos="fade-up" class="formulario">
+        <p class="parrafoAgendar" >cuántas personas?:</p>
+        <input type="number" name="personas" id="personas" min="1" max="10" class="formulario">        
         <p class="parrafoAgendar">seleccioná el servicio:</p>
-        <select name="servicio">
+        <select name="servicio" class="formulario">
             <option value="value1">perfilado $1000</option>
             <option value="value2">maquillaje social $1000</option>
             <option value="value3">maquillaje social a domicilio $1000</option>
@@ -39,17 +40,17 @@
           <p class="parrafoAgendar">seleccioná un día:</p>
           <input type="date" id="dia" name="dia"
                  value="2022-07-22"
-                 min="2022-07-22" max="2022-12-31">
+                 min="2022-07-22" max="2022-12-31" class="formulario">
           <p class="parrafoAgendar">seleccioná un horario:</p>
           <input type="time" id="horario" name="horario"
-                 min="07:00" max="20:00" required>
+                 min="07:00" max="20:00" required class="formulario">
           <small>consultar por horarios fuera del rango</small>
           <p class="parrafoAgendar">datos personales</p>
-          <input type="text" name="nombre y apellido" id="">
-          <input type="tel" name="telefono" id="">
-          <input type="text" name="dirección" id="">
+          <input type="text" name="nombre y apellido" id="" placeholder="nombre y apellido" class="formulario">
+          <input type="tel" name="telefono" id="" placeholder="teléfono" class="formulario">
+          <input type="text" name="dirección" id="" placeholder="dirección" class="formulario">
           <small>sólo si elegiste un servicio a domiclio</small>
-          <p class="botonAgendar"><button type="submit">agendar</button></p>
+          <p><button type="submit">agendar</button></p>
     </form>
 <!--Fin formulario-->
 
@@ -70,6 +71,9 @@
 
 </footer>
 <!--Fin footer-->
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>

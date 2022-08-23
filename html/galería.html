@@ -7,6 +7,7 @@
     <title>Agustina Iudica</title>
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="galeria">
     <header class="header">
@@ -26,56 +27,56 @@
     </header>
         <!--Fin menú de navegación-->
         <main>
-            <center><h1 class="tituloGaleria">galería</h1></center>
+            <center><h1 class="tituloGaleria" data-aos="fade-up" data-aos-duration="1000">galería</h1></center>
             <!--Inicio galería-->
             <div class="gridGaleriaDesktop">
-                <img src="../imagenes/img-11.jpg" alt="" class="foto1">
-                <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-12.jpg" alt="" class="foto2">
+                <img src="../imagenes/img-11.jpg" alt="" class="foto1" data-aos="fade-up"> 
+                <img src="../imagenes/img-17.jpg" class="blanco"  >
+                <img src="../imagenes/img-12.jpg" alt="" class="foto2" data-aos="fade-up">
 
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-18.jpg" alt="" class="foto3">
+                <img src="../imagenes/img-18.jpg" alt="" class="foto3" data-aos="fade-up">
                 <img src="../imagenes/img-17.jpg" class="blanco">
 
-                <img src="../imagenes/img-13.JPG" alt="" class="foto4">
+                <img src="../imagenes/img-13.JPG" alt="" class="foto4" data-aos="fade-up">
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-14.JPG" alt="" class="foto5">
+                <img src="../imagenes/img-14.JPG" alt="" class="foto5" data-aos="fade-up">
 
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-19.jpg" alt="" class="foto6">
+                <img src="../imagenes/img-19.jpg" alt="" class="foto6" data-aos="fade-up">
                 <img src="../imagenes/img-17.jpg" class="blanco">
 
-                <img src="../imagenes/img-15.jpg" alt="" class="foto7">
+                <img src="../imagenes/img-15.jpg" alt="" class="foto7" data-aos="fade-up">
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-16.jpg" alt="" class="foto8">
+                <img src="../imagenes/img-16.jpg" alt="" class="foto8"data-aos="fade-up" >
 
             </div>
 
             <div class="gridGaleriaMobile">
-                <img src="../imagenes/img-11.jpg" alt="" class="foto1">
+                <img src="../imagenes/img-11.jpg" alt="" class="foto1" data-aos="fade-up" >
                 <img src="../imagenes/img-17.jpg" class="blanco">
 
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-12.jpg" alt="" class="foto2">
+                <img src="../imagenes/img-12.jpg" alt="" class="foto2" data-aos="fade-up" >
                 
-                <img src="../imagenes/img-18.jpg" alt="" class="foto3">
+                <img src="../imagenes/img-18.jpg" alt="" class="foto3" data-aos="fade-up" >
                 <img src="../imagenes/img-17.jpg" class="blanco">
 
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-13.JPG" alt="" class="foto4">
+                <img src="../imagenes/img-13.JPG" alt="" class="foto4" data-aos="fade-up" >
                 
-                <img src="../imagenes/img-14.JPG" alt="" class="foto5">
+                <img src="../imagenes/img-14.JPG" alt="" class="foto5" data-aos="fade-up" >
                 <img src="../imagenes/img-17.jpg" class="blanco">
 
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-19.jpg" alt="" class="foto6">
+                <img src="../imagenes/img-19.jpg" alt="" class="foto6" data-aos="fade-up" >
                 
 
-                <img src="../imagenes/img-15.jpg" alt="" class="foto7">
+                <img src="../imagenes/img-15.jpg" alt="" class="foto7" data-aos="fade-up" >
                 <img src="../imagenes/img-17.jpg" class="blanco">
                 
                 <img src="../imagenes/img-17.jpg" class="blanco">
-                <img src="../imagenes/img-16.jpg" alt="" class="foto8">
+                <img src="../imagenes/img-16.jpg" alt="" class="foto8" data-aos="fade-up">
 
             </div>
             <!--Fin galería-->
@@ -98,6 +99,14 @@
 
 </footer>
 <!--Fin footer-->
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+	    offset: 120,
+	    delay: 500,
+	    duration: 1000,
+	    easing: 'ease'
+  });
+  </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Hero";
-    src: url("Hero.eot?") format("eot"), url("Hero.woff") format("woff"), url("Hero.ttf") format("truetype"), url("Hero.svg#Hero") format("svg");
+    src: url(../tipografías/HeroLight-Light.otf);
     font-weight: normal;
     font-style: normal;
 }
@@ -34,10 +34,13 @@
 /* inicio menu Mobile*/
 nav ul li {
     padding-left: 25px;
+    transform: scale(2s);
 }
 
 nav a:hover {
     color: #d2e809;
+    font-size: 120%;
+
 }
 
 a {
@@ -55,6 +58,7 @@ a {
     list-style-type: none;
     font-size: 13px;
     color: #9061AC;
+    transition: font-size 2s;
 }
 
 /* fin menu Mobile*/
@@ -126,7 +130,7 @@ footer {
 
 /* fin media queries footer*/
 
-/*inicio index Mobile*/
+/*inicio index*/
 .index {
     background-image: url("../imagenes/background-index.png");
     background-repeat: no-repeat;
@@ -195,7 +199,9 @@ h3 {
     max-height: 300px;
     max-width: 300px;
 }
-
+.widgetInstagram{
+    margin: 20px;
+}
 /*fin index Mobile*/
 
 /*Media queries index*/
@@ -265,7 +271,7 @@ h3 {
     }
 
     .parrafoPresentacion {
-        font-size: 1.5cm;
+        font-size: 1.3cm;
         margin-bottom: 30px;
     }
 
@@ -278,8 +284,11 @@ h3 {
         max-height: 600px;
         max-width: 600px;
     }
+    .widgetInstagram{
+        margin: 50px;
+    }
+    }
 
-}
 
 @media only screen and (min-width: 1200px) {
     .tituloIndex {
@@ -488,6 +497,12 @@ h3 {
 form {
     margin-left: 15px;
 }
+.formulario{
+    border-radius:5px;
+}
+.formulario:focus{
+    outline: 2px solid #9061AC;
+}
 
 .parrafoAgendar {
     font-family: "Hero";
@@ -497,11 +512,11 @@ form {
     margin-top: 10px;
 }
 
-.botonAgendar {
+.button {
     font-family: "Gangitem";
     font-size: 0.7;
     margin-top: 10px;
-    color: #9061AC;
+    background-color:#9061AC;
 }
 
 /*fin agendar*/
