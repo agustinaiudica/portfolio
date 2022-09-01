@@ -1,0 +1,375 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Hero";
+  src: url("../tipografías/HeroLight-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gangitem";
+  src: url("../Tipografías/Gangitem.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+  *::selection {
+    background-color: #9061AC;
+    color: white; }
+
+/*variables*/
+/* header */
+header {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  header .logo {
+    padding: 20px; }
+    header .logo:hover {
+      scale: 120%;
+      transition: all 0.5s; }
+    @media (min-width: 768px) {
+      header .logo {
+        scale: 150%; } }
+    @media (min-width: 1021px) {
+      header .logo {
+        scale: 200%; } }
+  header nav .menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    font-family: "Hero";
+    font-size: 13px;
+    list-style-type: none;
+    color: #9061AC; }
+    @media (min-width: 768px) {
+      header nav .menu {
+        font-size: 20px; } }
+    @media (min-width: 1021px) {
+      header nav .menu {
+        font-size: 30px; } }
+    header nav .menu li {
+      padding-left: 25px;
+      transform: scale(2s); }
+      header nav .menu li a {
+        text-decoration: none;
+        color: #9061AC; }
+        header nav .menu li a:hover {
+          color: #d2e809;
+          font-size: 120%;
+          transition: all 0.5s; }
+
+/*footer*/
+footer {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  footer a {
+    text-decoration: none; }
+  footer .footer-1 {
+    font-family: "Gangitem";
+    font-size: 0.7cm;
+    color: #9061AC; }
+    @media (min-width: 768px) {
+      footer .footer-1 {
+        font-size: 30px; } }
+    @media (min-width: 1021px) {
+      footer .footer-1 {
+        font-size: 50px; } }
+  footer .footer-2 {
+    font-family: "Hero";
+    font-size: 0.3cm;
+    color: #b48ad1; }
+    @media (min-width: 768px) {
+      footer .footer-2 {
+        font-size: 20px; } }
+    @media (min-width: 1021px) {
+      footer .footer-2 {
+        font-size: 30px; } }
+  footer .footer-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      footer .footer-3 {
+        font-size: 20px; } }
+    @media (min-width: 1021px) {
+      footer .footer-3 {
+        font-size: 30px; } }
+
+/*index*/
+.index {
+  background-image: url("../imagenes/background-index.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.tituloIndex {
+  font-family: "Gangitem";
+  font-size: 60px;
+  text-align: right;
+  line-height: -5;
+  color: #9061AC; }
+  @media (min-width: 768px) {
+    .tituloIndex {
+      font-size: 100px; } }
+  @media (min-width: 1021px) {
+    .tituloIndex {
+      font-size: 150px; } }
+
+.subtituloIndex {
+  font-family: "Hero";
+  text-align: right;
+  color: #9061AC;
+  font-size: "Hero"; }
+  @media (min-width: 768px) {
+    .subtituloIndex {
+      font-size: 40px; } }
+  @media (min-width: 1021px) {
+    .subtituloIndex {
+      font-size: 60px; } }
+
+.parrafoPresentacion {
+  font-family: "Hero";
+  font-size: 13px;
+  color: #9061AC; }
+  @media (min-width: 768px) {
+    .parrafoPresentacion {
+      font-size: 20px; } }
+  @media (min-width: 1021px) {
+    .parrafoPresentacion {
+      font-size: 30px; } }
+
+.flexIndex {
+  display: flex;
+  flex-direction: column; }
+  .flexIndex img {
+    width: 100%;
+    height: 100%; }
+
+.img-1 {
+  max-height: 300px;
+  max-width: 300px;
+  position: relative;
+  top: -40px; }
+  @media (min-width: 768px) {
+    .img-1 {
+      max-height: 600px;
+      max-width: 600px; } }
+  @media (min-width: 1021px) {
+    .img-1 {
+      max-height: 800px;
+      max-width: 800px; } }
+
+.img-2 {
+  max-height: 300px;
+  max-width: 300px; }
+  @media (min-width: 768px) {
+    .img-2 {
+      max-height: 400px;
+      max-width: 400px; } }
+  @media (min-width: 1021px) {
+    .img-2 {
+      max-height: 500px;
+      max-width: 500px; } }
+
+h3 {
+  font-family: "Hero";
+  font-size: 20px;
+  color: #9061AC; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 40px; } }
+  @media (min-width: 1021px) {
+    h3 {
+      font-size: 60px; } }
+
+/*quien soy*/
+.quienSoy {
+  background-image: url(../imagenes/background-quiensoy.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parrafoQuienSoy {
+  font-family: "Hero";
+  font-size: 13px;
+  color: #9061AC; }
+  @media (min-width: 768px) {
+    .parrafoQuienSoy {
+      font-size: 20px; } }
+  @media (min-width: 1021px) {
+    .parrafoQuienSoy {
+      font-size: 30px; } }
+
+.parrafoQuienSoy1 {
+  font-family: "Hero";
+  font-size: 13px;
+  color: #9061AC; }
+  @media (min-width: 768px) {
+    .parrafoQuienSoy1 {
+      font-size: 20px; } }
+  @media (min-width: 1021px) {
+    .parrafoQuienSoy1 {
+      font-size: 30px; } }
+
+.parrafoQuienSoy2 {
+  font-family: "Hero";
+  font-size: 13px;
+  color: #9061AC;
+  text-align: right; }
+  @media (min-width: 768px) {
+    .parrafoQuienSoy2 {
+      font-size: 20px; } }
+  @media (min-width: 1021px) {
+    .parrafoQuienSoy2 {
+      font-size: 30px; } }
+
+.tituloQuienSoy {
+  font-family: "Hero";
+  font-size: 20px;
+  color: #9061AC; }
+  @media (min-width: 768px) {
+    .tituloQuienSoy {
+      font-size: 40px; } }
+  @media (min-width: 1021px) {
+    .tituloQuienSoy {
+      font-size: 60px; } }
+
+.img-3 {
+  max-width: 300px; }
+
+/*galería*/
+.tituloGaleria {
+  font-family: "Gangitem";
+  color: #9061AC;
+  font-size: 60px; }
+  @media (min-width: 768px) {
+    .tituloGaleria {
+      font-size: 100px; } }
+  @media (min-width: 1021px) {
+    .tituloGaleria {
+      font-size: 150px; } }
+
+@media (max-width: 768px) {
+  .gridGaleriaMobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin-bottom: 15px; } }
+
+.gridGaleriaMobile img {
+  width: 100%;
+  height: 100%; }
+
+@media (min-width: 768px) {
+  .gridGaleriaMobile {
+    display: none; } }
+
+@media (min-width: 1021px) {
+  .gridGaleriaMobile {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .gridGaleriaDesktop {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .gridGaleriaDesktop {
+    display: contents;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); } }
+
+@media (min-width: 1021px) {
+  .gridGaleriaDesktop {
+    display: contents;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); } }
+
+.gridGaleriaDesktop img {
+  width: 100%;
+  height: 100%; }
+
+/*servicios
+
+.servicios {
+    background-image: url(../imagenes/background-servicios.png);
+    background-size: cover;
+}
+.gridServicios1{
+    font-family: $subtitulo;
+    font-size:$subtituloSizeMobile;
+    color: $main-color;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "foto1 subtituloServicios1"
+        "foto1 parrafoServicios1"
+        "foto1 parrafoPrecio1"
+    img {
+        width: 100%;
+        height: 100%;   
+    }
+}
+.img-9 {
+    grid-area: foto1;
+    margin-left: 15px;
+    max-width: 350px;
+    width: 100%;
+    height: 100%;  
+}
+.subtituloServicios1 {
+    grid-area: subtituloServicios1;
+}
+.parrafoServicios1 {
+    grid-area: parrafoServicios1;
+}
+.parrafoPrecio1 {
+    grid-area: parrafoPrecio1;
+}*/
+/*agendar*/
+.agendar {
+  background-image: url(../imagenes/background-agendar.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.tituloAgendar {
+  font-family: "Gangitem";
+  color: #9061AC;
+  font-size: 60px; }
+  @media (min-width: 768px) {
+    .tituloAgendar {
+      font-size: 100px; } }
+  @media (min-width: 1021px) {
+    .tituloAgendar {
+      font-size: 150px; } }
+
+.formulario {
+  border-radius: 5px; }
+  .formulario:focus {
+    outline: 2px solid #9061AC; }
+
+.parrafoAgendar {
+  font-family: "Hero";
+  color: #9061AC;
+  font-size: 13px; }
+  @media (min-width: 768px) {
+    .parrafoAgendar {
+      font-size: 20px; } }
+  @media (min-width: 1021px) {
+    .parrafoAgendar {
+      font-size: 30px; } }
+
+.button {
+  font-family: "Gangitem";
+  font-size: 150px;
+  background-color: #9061AC; }

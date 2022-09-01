@@ -7,7 +7,7 @@
     <title>Agustina Iudica</title>
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="agendar mx-5">
@@ -26,29 +26,29 @@
         </nav>        
         <!--Fin menú de navegación-->
             </header id="header">
-    <h1 class="tituloAgendar" data-aos="fade-up" data-aos-duration="1000">agendá tu turno</h1>
+    <h1 class="tituloAgendar mb-3" data-aos="fade-up" data-aos-duration="1000">agendá tu turno</h1>
 <!--Inicio formulario bootstrap-->
 <form class="row g-3" data-aos="fade-up">
     <div class="col-md-6">
-      <label for="inputEmail4" class="form-label parrafoAgendar">Nombre</label>
+      <label for="inputEmail4" class="form-label parrafoAgendar mt-2 mb-2">Nombre</label>
       <input type="email" class="form-control" id="inputEmail4">
     </div>
     <div class="col-md-6">
-      <label for="inputPassword4" class="form-label parrafoAgendar">Apellido</label>
+      <label for="inputPassword4" class="form-label parrafoAgendar mt-2 mb-2">Apellido</label>
       <input type="password" class="form-control" id="inputPassword4">
     </div>
     <div class="col-md-6">
-        <label for="inputEmail4" class="form-label parrafoAgendar">Usuario de Instagram</label>
+        <label for="inputEmail4" class="form-label parrafoAgendar mt-2 mb-2">Usuario de Instagram</label>
         <div class="input-group">
             <div class="input-group-text">@</div>
             <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
           </div>
       </div>
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label parrafoAgendar">Teléfono</label>
+        <label for="inputPassword4" class="form-label parrafoAgendar mt-2 mb-2">Teléfono</label>
         <input type="password" class="form-control" id="inputPassword4">
       </div>
-    <p class="parrafoAgendar">Seleccioná el servicio:</p>
+    <p class="parrafoAgendar mt-2 mb-2">Seleccioná el servicio:</p>
     <select class="col-md-6 form-select" aria-label="Default select example" >
         <option selected>Maquillaje social</option>
         <option value="1">Perfilado de cejas</option>
@@ -62,11 +62,11 @@
         <option value="2">3</option>
         <option value="3">4</option>
       </select>
-      <p class="parrafoAgendar col-md-6">seleccioná un día:</p>
+      <p class="parrafoAgendar col-md-6 ">seleccioná un día:</p>
       <input type="date" id="dia" name="dia"
              value="2022-07-22"
              min="2022-07-22" max="2022-12-31" class="formulario">
-      <p class="parrafoAgendar col-md-6">seleccioná un horario:</p>
+      <p class="parrafoAgendar col-md-6 ">seleccioná un horario:</p>
       <input type="time" id="horario" name="horario"
              min="07:00" max="20:00" required class="formulario"> 
     <div class="col-md-6">
@@ -81,7 +81,7 @@
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-secondary bg-light parrafoAgendar">Agendar</button>
+      <button type="submit" class="btn btn-secondary bg-light parrafoAgendar mt-3">Agendar</button>
     </div>
   </form>
 

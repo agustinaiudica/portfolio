@@ -1,315 +1,4 @@
-@font-face {
-    font-family: "Hero";
-    src: url(../tipografías/HeroLight-Light.otf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Gangitem";
-    src: url("../Tipografías/Gangitem.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* inicio header*/
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-/* fin header*/
-
-/* inicio menu Mobile*/
-nav ul li {
-    padding-left: 25px;
-    transform: scale(2s);
-}
-
-a {
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #d2e809;
-    font-size: 120%;
-    transition: all 0.5s;
-
-}
-
-.logo {
-    display: flex;
-
-}
-
-.logo :hover{
-    scale: 120%;
-    transition: all 0.5s;
-}
-
-.menu {
-    display: flex;
-    font-family: "Hero";
-    list-style-type: none;
-    font-size: 13px;
-    color: #9061AC;
-}
-
-/* fin menu Mobile*/
-
-/* media queries menu*/
-@media only screen and (min-width: 768px) {
-    .menu {
-        font-size: 20px;
-    }
-
-    .logo {
-        scale: 150%;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .menu {
-        font-size: 30px;
-    }
-
-    .logo {
-        scale: 200%;
-    }
-}
-
-/* fin media queries menu*/
-
-/* inicio footer*/
-footer {
-    margin-top: 10px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.footer-1 {
-    font-family: "Gangitem";
-    font-size: 0.7cm;
-    color: #9061AC;
-}
-
-.footer-2 {
-    font-family: "Hero";
-    font-size: 0.3cm;
-    line-height: 20px;
-    color: #b48ad1;
-}
-
-/* fin footer*/
-
-/* media queries footer*/
-@media only screen and (min-width: 768px) {
-    .footer-1 {
-        font-size: 1.5cm;
-    }
-
-    .footer-2 {
-        font-size: 0.7cm;
-        line-height: 40px;
-    }
-
-}
-
-/* fin media queries footer*/
-
-/*inicio index*/
-.index {
-    background-image: url("../imagenes/background-index.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.tituloIndex {
-    font-family: "Gangitem";
-    text-align: right;
-    line-height: -5;
-    color: #9061AC;
-    font-size: 2cm;
-}
-
-.subtituloIndex {
-    font-family: "Hero";
-    text-align: right;
-    color: #9061AC;
-    font-size: 100%;
-    margin-top: 15px;
-}
-
-.parrafoPresentacion {
-    font-family: "Hero";
-    font-size: 0.4cm;
-    color: #9061AC;
-    margin-top: 40px;
-    padding: 15px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-family: "Hero";
-    font-size: 0.7cm;
-    color: #9061AC;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-
-.flexIndex {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.flexIndex>img {
-    width: 100%;
-    height: 100%;
-}
-
-
-.img-1 {
-    max-height: 900px;
-    max-width: 900px;
-}
-
-.img-2 {
-    max-height: 300px;
-    max-width: 300px;
-}
-.widgetInstagram{
-    margin: 20px;
-}
-/*fin index Mobile*/
-
-/*Media queries index*/
-
-@media only screen and (min-width: 481px) {
-    .tituloIndex {
-        font-size: 3cm;
-    }
-
-    .subtituloIndex {
-        font-size: 1cm;
-        margin-top: 15px;
-    }
-
-    .parrafoPresentacion {
-        font-size: 0.8cm;
-        margin-bottom: 30px;
-    }
-
-    h3 {
-        font-size: 1cm;
-    }
-
-    .img-2 {
-        max-height: 400px;
-        max-width: 400px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .tituloIndex {
-        font-size: 4cm;
-    }
-
-    .subtituloIndex {
-        font-size: 1.5cm;
-        margin-top: 15px;
-    }
-
-    .parrafoPresentacion {
-        font-size: 1cm;
-        margin-bottom: 30px;
-    }
-
-    h3 {
-        font-size: 1.5cm;
-    }
-
-    .img-1 {
-        padding: 20px;
-    }
-
-    .img-2 {
-        max-height: 500px;
-        max-width: 500px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .tituloIndex {
-        font-size: 5cm;
-    }
-
-    .subtituloIndex {
-        font-size: 2cm;
-    }
-
-    .parrafoPresentacion {
-        font-size: 1.3cm;
-        margin-bottom: 30px;
-    }
-
-    h3 {
-        font-size: 2cm;
-        margin-bottom: 40px;
-    }
-
-    .img-2 {
-        max-height: 600px;
-        max-width: 600px;
-    }
-    .widgetInstagram{
-        margin: 50px;
-    }
-    }
-
-
-@media only screen and (min-width: 1200px) {
-    .tituloIndex {
-        font-size: 5cm;
-    }
-
-    .subtituloIndex {
-        font-size: 2.5cm;
-    
-    }
-
-    .img-1 {
-        margin-left: 50px;
-        position: relative;
-        bottom: 100px;
-    }
-
-    .img-2 {
-        max-height: 800px;
-        max-width: 800px;
-    }
-}
-
-/*fin media queries index*/
-
-/* inicio quien_soy*/
-.quienSoy {
+/*.quienSoy {
     background-image: url(../imagenes/background-quiensoy.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,9 +6,7 @@ h3 {
 
 .parrafoQuienSoy,
 .parrafoQuienSoy1,
-.parrafoQuienSoy2,
-.parrafoQuienSoy3 {
-    text-shadow: #9061AC;
+.parrafoQuienSoy2, {
     font-family: "Hero";
     font-size: 0.4cm;
     color: #9061AC;
@@ -334,14 +21,13 @@ h3 {
 }
 
 
-
 .img-3 {
     max-width: 600px;
 }
 
-/* fin quien_soy*/
 
-/* media queries quien_soy*/
+
+/* media queries quien_soy
 @media only screen and (min-width: 481px) {
 
     .parrafoQuienSoy,
@@ -358,11 +44,6 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
-    .gridQuienSoy {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
     .parrafoQuienSoy,
     .parrafoQuienSoy1,
     .parrafoQuienSoy2,
@@ -400,14 +81,10 @@ h3 {
         font-size: 0.8cm;
     }
 
-    .gridQuienSoy {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 }
 
 
-/* fin media queries quien_soy*/
+ fin media queries quien_soy*/
 
 /*inicio agendar*/
 .agendar {

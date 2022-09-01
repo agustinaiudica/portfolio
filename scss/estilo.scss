@@ -1,0 +1,407 @@
+
+@import "./fuentes";
+@import "./reset";
+
+/*variables*/
+$titulo: "Gangitem";
+$subtitulo: "Hero";
+$parrafo: "Hero";
+$tituloSizeMobile:60px;
+$tituloSizeTablet:100px;
+$tituloSizeDesktop:150px;
+$subtituloSizeMobile:20px;
+$subtituloSizeTablet:40px;
+$subtituloSizeDesktop:60px;
+$parrafoSizeMobile:13px;
+$parrafoSizeTablet:20px;
+$parrafoSizeDesktop:30px;
+$main-color: #9061AC;
+$color2: #b48ad1;
+$color3: #d2e809;
+$small:481px;
+$medium:768px;
+$large:1021px;
+
+/* header */
+header{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        padding: 20px;
+        &:hover{
+            scale: 120%;
+            transition: all 0.5s;
+        }
+        @media (min-width: $medium){
+            scale:150%;
+        }
+        @media (min-width: $large){
+            scale:200%;
+        }
+    }
+    nav{
+        .menu{
+            display: flex;
+            flex-direction: row;
+            margin-right: 15px;
+            font-family: $parrafo;
+            font-size: $parrafoSizeMobile;
+            list-style-type: none;
+            color: $main-color;
+            @media (min-width: $medium){
+                font-size: $parrafoSizeTablet;
+            }
+            @media (min-width: $large){
+                font-size: $parrafoSizeDesktop;
+            }
+            li{
+                padding-left: 25px;
+                transform: scale(2s);
+                a{
+                    text-decoration: none;
+                    color: $main-color;
+                    &:hover{
+                        color: $color3;
+                        font-size: 120%;
+                        transition: all 0.5s;
+            }
+        }
+    }
+        }
+    }
+}
+
+/*footer*/
+footer {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    a{
+        text-decoration: none;
+    }
+    .footer-1 {
+        font-family: "Gangitem";
+        font-size: 0.7cm;
+        color:$main-color;
+        @media (min-width: $medium){
+            font-size: 30px;
+        }
+        @media (min-width: $large){
+            font-size: 50px;
+        }
+    }
+    .footer-2 {
+        font-family: "Hero";
+        font-size: 0.3cm;
+        color: $color2;
+        @media (min-width: $medium){
+            font-size: $parrafoSizeTablet;
+        }
+        @media (min-width: $large){
+            font-size: $parrafoSizeDesktop;
+        }
+    }
+    .footer-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: $medium){
+            font-size: $parrafoSizeTablet;
+        }
+        @media (min-width: $large){
+            font-size: $parrafoSizeDesktop;
+        }
+    }
+    
+}
+
+/*index*/
+.index {
+    background-image: url("../imagenes/background-index.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tituloIndex {
+    font-family: $titulo;
+    font-size: $tituloSizeMobile;
+    text-align: right;
+    line-height: -5;
+    color: $main-color;
+    @media (min-width: $medium){
+        font-size: $tituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $tituloSizeDesktop;
+    }
+}
+.subtituloIndex {
+    font-family: "Hero";
+    text-align: right;
+    color: $main-color;
+    font-size: $subtitulo;
+    @media (min-width: $medium){
+        font-size: $subtituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $subtituloSizeDesktop;
+    }
+}
+
+.parrafoPresentacion {
+    font-family: $parrafo;
+    font-size: $parrafoSizeMobile;
+    color: $main-color;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+
+.flexIndex {
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.img-1 {
+    max-height: 300px;
+    max-width: 300px;
+    position: relative;
+    top:-40px;
+    @media (min-width: $medium){
+        max-height: 600px;
+        max-width: 600px;
+    }
+    @media (min-width: $large){
+        max-height: 800px;
+        max-width: 800px;
+    }
+}
+
+
+.img-2 {
+    max-height: 300px;
+    max-width: 300px;
+    @media (min-width: $medium){
+        max-height: 400px;
+        max-width: 400px;
+    }
+    @media (min-width: $large){
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+h3 {
+    font-family:$subtitulo;
+    font-size: $subtituloSizeMobile;
+    color: $main-color;
+    @media (min-width: $medium){
+        font-size: $subtituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $subtituloSizeDesktop;
+    }
+}
+
+/*quien soy*/
+.quienSoy {
+    background-image: url(../imagenes/background-quiensoy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parrafoQuienSoy {
+    font-family: $parrafo;
+    font-size: $parrafoSizeMobile;
+    color: $main-color;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+.parrafoQuienSoy1 {
+    font-family: $parrafo;
+    font-size: $parrafoSizeMobile;
+    color: $main-color;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+.parrafoQuienSoy2 {
+    font-family: $parrafo;
+    font-size: $parrafoSizeMobile;
+    color: $main-color;
+    text-align: right;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+.tituloQuienSoy {
+    font-family: $subtitulo;
+    font-size: $subtituloSizeMobile;
+    color:$main-color;
+    @media (min-width: $medium){
+        font-size: $subtituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $subtituloSizeDesktop;
+    }
+}
+.img-3 {
+    max-width: 300px;
+}
+
+/*galería*/
+.tituloGaleria {
+    font-family: $titulo;
+    color: $main-color;
+    font-size:$tituloSizeMobile;
+    @media (min-width: $medium){
+        font-size: $tituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $tituloSizeDesktop;
+    }
+} 
+.gridGaleriaMobile {
+    @media (max-width: $medium){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        margin-bottom: 15px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    @media (min-width: $medium){
+        display: none;
+    }
+    @media (min-width: $large){
+        display: none;
+    }
+}
+
+.gridGaleriaDesktop {
+    @media (max-width: $medium){
+        display: none;
+    }
+
+    @media (min-width: $medium){
+        display: contents;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    @media (min-width: $large){
+        display: contents;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*servicios
+
+.servicios {
+    background-image: url(../imagenes/background-servicios.png);
+    background-size: cover;
+}
+.gridServicios1{
+    font-family: $subtitulo;
+    font-size:$subtituloSizeMobile;
+    color: $main-color;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "foto1 subtituloServicios1"
+        "foto1 parrafoServicios1"
+        "foto1 parrafoPrecio1"
+    img {
+        width: 100%;
+        height: 100%;   
+    }
+}
+.img-9 {
+    grid-area: foto1;
+    margin-left: 15px;
+    max-width: 350px;
+    width: 100%;
+    height: 100%;  
+}
+.subtituloServicios1 {
+    grid-area: subtituloServicios1;
+}
+.parrafoServicios1 {
+    grid-area: parrafoServicios1;
+}
+.parrafoPrecio1 {
+    grid-area: parrafoPrecio1;
+}*/
+
+/*agendar*/
+
+.agendar {
+    background-image: url(../imagenes/background-agendar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tituloAgendar {
+    font-family: $titulo;
+    color: $main-color;
+    font-size: $tituloSizeMobile;
+    @media (min-width: $medium){
+        font-size: $tituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $tituloSizeDesktop;
+    }
+}
+.formulario{
+    border-radius:5px;
+    &:focus{
+        outline: 2px solid $main-color;
+    }
+}
+.parrafoAgendar {
+    font-family: "Hero";
+    color: #9061AC;
+    font-size: $parrafoSizeMobile;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+
+.button {
+    font-family: $titulo;
+    font-size: $tituloSizeDesktop;
+    background-color:$main-color;
+}
