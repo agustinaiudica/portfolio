@@ -12,73 +12,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body class="quienSoy mw-100 mx-3">
+<body class="quienSoy mx-2 ">
     <header class="header" id="header">
-        <div class="logo">
-            <a href="../index.html"><img src="../imagenes/logo_personal.jpg" alt="inicio" width="40px" height="40px"></a></li>
-        </div>
-        <!--Inicio menú de navegación-->
-        <nav class="nav">
-            <ul class="menu">
-                <li> <a href="quien_soy.html">quien soy</a></li>
-                <li> <a href="galeria.html">galería</a></li>
-                <li> <a href="servicios.html">servicios</a></li>
-                <li> <a href="agendar.html">agendar</a></li>
-            </ul>
-        </nav>        
-        <!--Fin menú de navegación-->
+        <!-- Navbar Boostrap (alinear a la derecha pendiente)-->
+        <nav class="navbar navbar-expand-lg " id="inicio">
+          <div class="container-fluid">
+            <a class="navbar-brand logo" href="../index.html"><img src="../imagenes/logo_personal.jpg" alt="inicio" width="40px" height="40px"></a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class=" nav navbar-nav menu">
+                <li class="nav-item">
+                  <a class="nav-link"  href="../html/quien_soy.html">quien soy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/galeria.html">galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/servicios.html">servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/agendar.html">agendar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Fin menú de navegación-->
             </header>
+
+
+                    </header>
     <main>
         <!--Introducción-->
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-4 mw-100 p-4"> <img class="mw-100" data-aos="fade-up" data-aos-duration="1000" src="../imagenes/img-3.png" alt="foto mía" ></div>
+            <div class="col-4 mw-100 p-2"> <img class="mw-100" data-aos="fade-up" data-aos-duration="1000" src="../imagenes/img-3.png" alt="foto mía" ></div>
             <div class="col-4"></div>
         </div>
-        <div class="row">
-            <p class="col-2"></p>
-            <p class="parrafoQuienSoy col-8 text-center" data-aos="fade-up" data-aos-duration="1000">Tengo 20 años y soy maquilladora freelance, a continuación te cuentoalgunos de los cursos y especializaciones más importantes que realicé.</p>
-            <p class="col-2"></p>
+        <div class="row mt-3">
+            <p class="col-1 col-lg-2"></p>
+            <p class="parrafoQuienSoy col-10 col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">Tengo 20 años y soy maquilladora freelance, a continuación te cuentoalgunos de los cursos y especializaciones más importantes que realicé.</p>
+            <p class="col-1 col-lg-2"></p>
         </div>
         <!--Sobre mí-->
-        <h1 class="tituloQuienSoy p-4" data-aos="fade-up" data-aos-duration="1000"> <center>- sobre mí -</center></h1>
-        <div class="row mx-5 ">
+        <h1 class="tituloQuienSoy p-2" data-aos="fade-up" data-aos-duration="1000"> <center>- sobre mí -</center></h1>
+        <div class="row mx-2 mx-lg-5 mw-100 ">
             <div class="col-3 mw-100">
                 <img src="../imagenes/img-4.png" alt="foto 1" class="mw-100 img-fluid" data-aos="fade-right" data-aos-duration="1000">
             </div>
-            <div class="col-9 mw-100 d-flex align-items-center"><p class="parrafoQuienSoy1 " data-aos="fade-left" data-aos-duration="1000">En 2018 realicé la carrera de Maquilladora Profesional en la escuela de Regina Kuligovsky. La misma tiene una duración de un año y durante este período estudian muchas técnicas.</p></div>
-        </div>
-        <div class="row mx-5 align-content-center justify-content-center">
-            <div class="col-9 mw-100 d-flex align-items-center"><p class="parrafoQuienSoy2" data-aos="fade-left" data-aos-duration="1000">Luego trabajé desde 2019 hasta 2021 en uno de los locales de Regina, en esta etapa me especialicé en perfilado de cejas y maquillaje social para eventos y novias.</p></div>
-            <div class="col-3 mw-100"><img src="../imagenes/img-5.png" alt="foto 2 " class="mw-100 img-fluid" data-aos="fade-right" data-aos-duration="1000"></div>
-        </div>
-        <div class="row mx-5 align-content-center justify-content-center">
-            <div class="col-3 mw-100"><img src="../imagenes/img-6.png" alt="foto 3" class="mw-100 img-fluid" data-aos="fade-right" data-aos-duration="1000"></div>
-            <div class="col-9 mw-100 d-flex align-items-center "><p class="parrafoQuienSoy1 text-right" data-aos="fade-left" data-aos-duration="1000">Nunca dejé de aprender, por ejemplo, esta imagen es mi entrega final en el curso Formación de Artistas con Julia Mosler, también tomé cursos con María Sol, Nathacha Nina, Mila Marzi y más.</p></div>
-        </div>
-        <h2 class="tituloQuienSoy p-2" data-aos="fade-up" data-aos-duration="1000"> <center>- dónde estoy-</center></h2>
-        <section class="dondeEstoy container mx-3" data-aos="fade-up" data-aos-duration="1000"></section>
-        <div class="row justify-content-center align-content-center mx-5">
-            <div class=" col-md-4 align-content-center" >
-                <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=Av.%20Gaona%201163,%20C1405%20DKA,%20Buenos%20Aires+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe>
+
+            <div class="col-9 mw-100 d-flex align-items-center ">
+                <p class="parrafoQuienSoy1 " data-aos="fade-left" data-aos-duration="1000">En 2018 realicé la carrera de Maquilladora Profesional en la escuela de Regina Kuligovsky. La misma tiene una duración de un año y durante este período estudian muchas técnicas.</p></div>
             </div>
-            <p class="parrafoQuienSoy col-md-8 text-center text-md-start">Me encuentro a sólo unas cuadras del Cid Campeador, aunque generalmente atiendo a domicilio, también ofrezco mi estudio.</p>
+
+            <div class="row mx-2 align-content-center justify-content-center mx-lg-5">
+
+            <div class="col-9 mw-100 d-flex align-items-center">
+                <p class="parrafoQuienSoy2" data-aos="fade-left" data-aos-duration="1000">Luego trabajé desde 2019 hasta 2021 en uno de los locales de Regina, en esta etapa me especialicé en perfilado de cejas y maquillaje social para eventos y novias.</p></div>
+                <div class="col-3 mw-100"><img src="../imagenes/img-5.png" alt="foto 2 " class="mw-100 img-fluid" data-aos="fade-right" data-aos-duration="1000"></div>
+            </div>
+
+            <div class="row mx-2 align-content-center justify-content-center mx-lg-5">
+                
+            <div class="col-3 mw-100">
+                <img src="../imagenes/img-6.png" alt="foto 3" class="mw-100 img-fluid" data-aos="fade-right" data-aos-duration="1000">
+            </div>
+
+            <div class="col-9 mw-100 d-flex align-items-center ">
+                <p class="parrafoQuienSoy1 text-right" data-aos="fade-left" data-aos-duration="1000">Nunca dejé de aprender, por ejemplo, esta imagen es mi entrega final en el curso Formación de Artistas con Julia Mosler, también tomé cursos con María Sol, Nathacha Nina, Mila Marzi y más.</p>
+            </div>
         </div>
-    </section>
+
+        <h2 class="tituloQuienSoy p-2" data-aos="fade-up" data-aos-duration="1000"> <center>- dónde estoy-</center></h2>
+        <div class="row d-flex mx-2 mx-lg-5 justify-content-center align-content-center" data-aos="fade-up" data-aos-duration="1000" >
+            <div class= "col-md-5 col-xl-3 d-flex" >
+                <iframe class="mx-100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av.%20Gaona%201163,%20C1405%20DKA,%20Buenos%20Aires+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe>
+            </div>
+            <p class="parrafoQuienSoy col-md-7 col-xl-9 d-flex justify-content-center align-content-center">Me encuentro a sólo unas cuadras del Cid Campeador, aunque generalmente atiendo a domicilio, también ofrezco mi estudio.</p>
+        </div>
 </main>
 <!--Inicio footer-->
-<footer class="mx-5">
+<footer class="mx-2 mx-lg-5">
     <div>
         <p class="footer-1">contactame</p>
-<p class="footer-2">agus.iudi@gmail.com</p>
-<p class="footer-2">+54 011 6666-6666</p>
-<a href="https://www.instagram.com/agustinaiudica/?hl=es" target="_blank"><img src="../imagenes/logo-instagram.png" alt="Instagram" width="40px" height="40px"></a>
+        <p class="footer-2">agus.iudi@gmail.com</p>
+        <p class="footer-2">+54 011 6666-6666</p>
+        <a href="https://www.instagram.com/agustinaiudica/?hl=es" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
     </div>
 
     <div class="footer-3 ">
-        <a href="#header"> <img src="../imagenes/flecha-14.png" alt="flecha" height="40px" width="40 px"></a>
+        <a href="#header"><i class="fa-solid fa-angle-up"></i></a>
         <a href="#header"><p class="footer-2">Volver arriba</p></a>
-
     </div>
 
 </footer>
@@ -88,6 +114,6 @@
         AOS.init();
   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/e23f28a1a2.js" crossorigin="anonymous"></script>
 </body>
 </html>

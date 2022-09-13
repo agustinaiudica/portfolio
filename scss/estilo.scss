@@ -3,24 +3,33 @@
 @import "./reset";
 
 /*variables*/
-$titulo: "Gangitem";
+$titulo: 'Prata', serif;
 $subtitulo: 'Quicksand', sans-serif;
-$parrafo: 'Quicksand', sans-serif;;
-$tituloSizeMobile:60px;
+$parrafo: 'Quicksand', sans-serif; 
+/*titulo*/
+$tituloSizeMobile:50px;
 $tituloSizeTablet:100px;
 $tituloSizeDesktop:150px;
+$tituloSizexlarge:200px;
+/*subtitulo*/
 $subtituloSizeMobile:20px;
 $subtituloSizeTablet:40px;
 $subtituloSizeDesktop:60px;
+$subtituloSizexlarge:80px;
+/*párrafo*/
 $parrafoSizeMobile:13px;
 $parrafoSizeTablet:20px;
 $parrafoSizeDesktop:30px;
+$parrafoSizexlarge:40px;
+/*colores*/
 $main-color: #9061AC;
 $color2: #b48ad1;
 $color3: #d2e809;
+/*breaking points*/
 $small:481px;
 $medium:768px;
 $large:1021px;
+$xlarge:1280px;
 
 %tituloMobile{
     font-family: $titulo;
@@ -50,29 +59,25 @@ $large:1021px;
 
 /* header */
 header{
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     .logo {
-        padding: 20px;
+        opacity: 0.7;
+        margin-left: 10px;
         &:hover{
-            scale: 120%;
+            opacity: 1;
             transition: all 0.5s;
         }
         @media (min-width: $medium){
-            scale:150%;
+            scale: 140%;
         }
         @media (min-width: $large){
-            scale:200%;
+            scale: 170%;
         }
     }
     nav{
         .menu{
-            display: flex;
-            flex-direction: row;
-            margin-right: 15px;
             @extend %parrafoMobile;
             list-style-type: none;
             @media (min-width: $medium){
@@ -105,11 +110,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    .fa-instagram{
+        color: $main-color;
+    }
+    .fa-angle-up {
+        color: $main-color;
+    }
     a{
         text-decoration: none;
     }
     .footer-1 {
-        font-family: "Gangitem";
+        font-family: 'Prata', serif;
         font-size: 0.7cm;
         color:$main-color;
         @media (min-width: $medium){
@@ -120,7 +131,7 @@ footer {
         }
     }
     .footer-2 {
-        font-family: "Hero";
+        font-family: 'Quicksand', sans-serif;
         font-size: 0.3cm;
         color: $color2;
         @media (min-width: $medium){
@@ -196,9 +207,13 @@ footer {
     top:-40px;
     @media (min-width: $medium){
         @include tamañoMaximo (600px, 600px);
+        top:-60px;
+        right: -60px;
     }
     @media (min-width: $large){
         @include tamañoMaximo (800px, 800px);
+        top:-150px;
+        right: -100px;
     }
 }
 
@@ -227,6 +242,7 @@ h3 {
     background-image: url(../imagenes/background-quiensoy.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 .parrafoQuienSoy {
     @extend %parrafoMobile;
@@ -265,6 +281,7 @@ h3 {
         font-size: $subtituloSizeDesktop;
     }
 }
+
 .img-3 {
     max-width: 300px;
 }
@@ -319,13 +336,43 @@ h3 {
     }
 }
 
-/*servicios
+/*servicios*/
 
 .servicios {
     background-image: url(../imagenes/background-servicios.png);
     background-size: cover;
 }
-.gridServicios1{
+.serviciosBoostrap{
+    img{
+        @include tamañoMaximo(150px,150px);
+        @include tamañoMaximo(100%,100% );
+        @media (min-width: $medium){
+            @include tamañoMaximo(200px,200px)
+        }
+        @media (min-width: $large){
+            @include tamañoMaximo(350px,350px)
+        }
+    }
+}
+.subtituloServicios1{
+    @extend %subtituloMobile;
+    @media (min-width:$medium){
+        font-size: $subtituloSizeTablet;
+    }
+    @media (min-width:$large){
+        font-size: $subtituloSizeDesktop;
+    }
+}
+.parrafoServicios1{
+    @extend %parrafoMobile;
+    @media (min-width:$medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width:$large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+/*.gridServicios1{
     font-family: $subtitulo;
     font-size:$subtituloSizeMobile;
     color: $main-color;
