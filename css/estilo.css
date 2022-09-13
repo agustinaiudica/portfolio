@@ -1,13 +1,14 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 @font-face {
   font-family: "Hero";
-  src: url("../tipografías/HeroLight-Light.otf");
+  src: url("../tipografias/HeroLight-Light.otf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gangitem";
-  src: url("../Tipografías/Gangitem.ttf");
+  src: url("../tipografias/Gangitem.otf");
   font-weight: normal;
   font-style: normal; }
 
@@ -20,18 +21,18 @@
     color: white; }
 
 /*variables*/
-.tituloIndex, .tituloQuienSoy, .tituloGaleria, .tituloAgendar {
+.tituloIndex, .tituloGaleria, .tituloAgendar {
   font-family: "Gangitem";
   font-size: 60px;
   color: #9061AC; }
 
-.subtituloIndex, h3, .parrafoAgendar {
-  font-family: "Hero";
+.subtituloIndex, h3, .tituloQuienSoy, .parrafoAgendar {
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
   color: #9061AC; }
 
 header nav .menu, .parrafoPresentacion, .parrafoQuienSoy, .parrafoQuienSoy1, .parrafoQuienSoy2 {
-  font-family: "Hero";
+  font-family: "Quicksand", sans-serif;
   font-size: 13px;
   color: #9061AC; }
 

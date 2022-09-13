@@ -4,8 +4,8 @@
 
 /*variables*/
 $titulo: "Gangitem";
-$subtitulo: "Hero";
-$parrafo: "Hero";
+$subtitulo: 'Quicksand', sans-serif;
+$parrafo: 'Quicksand', sans-serif;;
 $tituloSizeMobile:60px;
 $tituloSizeTablet:100px;
 $tituloSizeDesktop:150px;
@@ -257,7 +257,7 @@ h3 {
     }
 }
 .tituloQuienSoy {
-    @extend %tituloMobile;
+    @extend %subtituloMobile;
     @media (min-width: $medium){
         font-size: $subtituloSizeTablet;
     }
