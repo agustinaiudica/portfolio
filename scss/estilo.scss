@@ -1,61 +1,8 @@
 
 @import "./fuentes";
 @import "./reset";
-
-/*variables*/
-$titulo: 'Prata', serif;
-$subtitulo: 'Quicksand', sans-serif;
-$parrafo: 'Quicksand', sans-serif; 
-/*titulo*/
-$tituloSizeMobile:50px;
-$tituloSizeTablet:100px;
-$tituloSizeDesktop:150px;
-$tituloSizexlarge:200px;
-/*subtitulo*/
-$subtituloSizeMobile:20px;
-$subtituloSizeTablet:40px;
-$subtituloSizeDesktop:60px;
-$subtituloSizexlarge:80px;
-/*párrafo*/
-$parrafoSizeMobile:13px;
-$parrafoSizeTablet:20px;
-$parrafoSizeDesktop:30px;
-$parrafoSizexlarge:40px;
-/*colores*/
-$main-color: #9061AC;
-$color2: #b48ad1;
-$color3: #d2e809;
-/*breaking points*/
-$small:481px;
-$medium:768px;
-$large:1021px;
-$xlarge:1280px;
-
-%tituloMobile{
-    font-family: $titulo;
-    font-size: $tituloSizeMobile;
-    color: $main-color;
-}
-%subtituloMobile{
-    font-family: $subtitulo;
-    font-size: $subtituloSizeMobile;
-    color: $main-color;
-}
-%parrafoMobile{
-    font-family: $parrafo;
-    font-size: $parrafoSizeMobile;
-    color: $main-color;
-}
-
-@mixin tamaño ($ancho, $alto){
-    width: $ancho;
-    height: $alto;
-}
-
-@mixin tamañoMaximo ($maxancho, $maxalto){
-    max-width: $maxancho;
-    max-height: $maxalto;
-}
+@import "./variables";
+@import "./mediaQueries";
 
 /* header */
 header{
@@ -104,12 +51,14 @@ header{
 }
 
 /*footer*/
-footer {
+.footer {
     margin-top: 10px;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-left: 10px;
+    margin-right: 10px;
     .fa-instagram{
         color: $main-color;
     }
@@ -118,6 +67,10 @@ footer {
     }
     a{
         text-decoration: none;
+    }
+    @media (min-width: $large){
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .footer-1 {
         font-family: 'Prata', serif;
@@ -152,44 +105,116 @@ footer {
             font-size: $parrafoSizeDesktop;
         }
     }
-    
 }
-
+.copyright {
+    margin-top: 20px;
+    background-color: $main-color;
+    color:white;
+    font-family: $parrafo;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 /*index*/
 .index {
     background-image: url("../imagenes/background-index.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.flexIndexMobile{
+    .img-1{
+        @include tamañoMaximo (200px,200px);
+        margin-left: 10px;
+    }
+    @media (max-width: $small){
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: $small){
+        display: none;
+    }
+}
+
+.flexIndexDesktop{
+    @media (max-width: $small){
+        display: none;
+    }
+    @media (min-width: $small){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-left: 10px;
+        img {
+            @include tamañoMaximo (300px,300px);
+        }
+    }
+    @media (min-width: $medium){
+        img {
+            @include tamañoMaximo (400px,400px)
+        }
+    }
+    @media (min-width: $large){
+        img {
+            margin-left: 30px;
+            @include tamañoMaximo (600px,600px)
+        }
+    }
+}
 .tituloIndex {
     @extend %tituloMobile;
     text-align: right;
     line-height: -5;
+    margin-right: 10px;
     @media (min-width: $medium){
         font-size: $tituloSizeTablet;
     }
     @media (min-width: $large){
         font-size: $tituloSizeDesktop;
+        margin-right: 30px;
     }
 }
 .subtituloIndex {
     @extend %subtituloMobile;
     text-align: right;
+    margin-right: 10px;
     @media (min-width: $medium){
         font-size: $subtituloSizeTablet;
     }
     @media (min-width: $large){
         font-size: $subtituloSizeDesktop;
+        margin-right: 30px;
     }
 }
 
 .parrafoPresentacion {
     @extend %parrafoMobile;
+    padding: 10px;
     @media (min-width: $medium){
         font-size: $parrafoSizeTablet;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
     }
     @media (min-width: $large){
         font-size: $parrafoSizeDesktop;
+    }
+}
+
+.carousel{
+    padding: 35px;
+}
+
+.instagram{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    @media (min-width: $large){
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
     }
 }
 
@@ -201,22 +226,6 @@ footer {
     }
 
 }
-.img-1 {
-    @include tamañoMaximo (300px, 300px);
-    position: relative;
-    top:-40px;
-    @media (min-width: $medium){
-        @include tamañoMaximo (600px, 600px);
-        top:-60px;
-        right: -60px;
-    }
-    @media (min-width: $large){
-        @include tamañoMaximo (800px, 800px);
-        top:-150px;
-        right: -100px;
-    }
-}
-
 
 .img-2 {
     @include tamañoMaximo (300px, 300px);
@@ -237,14 +246,25 @@ h3 {
     }
 }
 
-/*quien soy*/
+/*quien soy
 .quienSoy {
     background-image: url(../imagenes/background-quiensoy.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
 }
+.flexQuienSoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    img {
+        max-width: 100%;
+        max-width: 200px;
+    }
+}
 .parrafoQuienSoy {
+    text-align: center;
     @extend %parrafoMobile;
     @media (min-width: $medium){
         font-size: $parrafoSizeTablet;
@@ -284,7 +304,132 @@ h3 {
 
 .img-3 {
     max-width: 300px;
+}*/
+
+
+/*quien soy opción2*/
+.quienSoy {
+    background-image: url(../imagenes/background-quiensoy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
 }
+.parrafoQuienSoy {
+    text-align: center;
+    @extend %parrafoMobile;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+.parrafoQuienSoy1 {
+    margin-left: 10px;
+    @extend %parrafoMobile;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+        margin-left: 20px;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+        margin-left: 30px;
+    }
+}
+.parrafoQuienSoy2 {
+    margin-right: 10px;
+    @extend %parrafoMobile;
+    text-align: right;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+        margin-right: 20px;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+        margin-right: 30px;
+    }
+}
+.parrafoQuienSoy3{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    @media (min-width: $medium){
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    @media (min-width: $large){
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+.tituloQuienSoy {
+    @extend %subtituloMobile;
+    @media (min-width: $medium){
+        font-size: $subtituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $subtituloSizeDesktop;
+    }
+}
+.flexQuienSoy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexQuienSoy2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    @media (min-width: $medium){
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    @media (min-width: $large){
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    img {
+        max-width: 100%;
+        @include tamañoMaximo (100px,100px);
+        @media (min-width: $medium){
+            @include tamañoMaximo (200px,200px);
+        }
+        @media (min-width: $large){
+            @include tamañoMaximo (350px,350px);
+        }
+    }
+}
+
+.img-3{
+    max-width: 200px;
+    @media (min-width: $medium){
+        max-width: 300px;
+    }
+    @media (min-width: $large){
+        max-width: 500px;
+    }
+}
+.mapa{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    @media (min-width: $medium){
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    @media (min-width: $large){
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
 
 /*galería*/
 .tituloGaleria {
@@ -372,38 +517,6 @@ h3 {
         font-size: $parrafoSizeDesktop;
     }
 }
-/*.gridServicios1{
-    font-family: $subtitulo;
-    font-size:$subtituloSizeMobile;
-    color: $main-color;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas:
-        "foto1 subtituloServicios1"
-        "foto1 parrafoServicios1"
-        "foto1 parrafoPrecio1"
-    img {
-        @include tamaño (100%, 100%);   
-    }
-}
-.img-9 {
-    grid-area: foto1;
-    margin-left: 15px;
-    max-width: 350px;
-    @include tamaño (100%, 100%); 
-}
-.subtituloServicios1 {
-    grid-area: subtituloServicios1;
-}
-.parrafoServicios1 {
-    grid-area: parrafoServicios1;
-}
-.parrafoPrecio1 {
-    grid-area: parrafoPrecio1;
-}*/
 
 /*agendar*/
 
@@ -415,11 +528,23 @@ h3 {
 
 .tituloAgendar {
     @extend %tituloMobile;
+    margin-left: 10px;
+    margin-right: 10px;
     @media (min-width: $medium){
         font-size: $tituloSizeTablet;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     @media (min-width: $large){
         font-size: $tituloSizeDesktop;
+    }
+}
+.divFormulario{
+    margin-left: 10px;
+    margin-right: 10px;
+    @media(min-width: $medium){
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
 .formulario{

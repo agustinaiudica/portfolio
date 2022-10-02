@@ -1,0 +1,49 @@
+/*variables*/
+$titulo: 'Prata', serif;
+$subtitulo: 'Quicksand', sans-serif;
+$parrafo: 'Quicksand', sans-serif; 
+/*titulo*/
+$tituloSizeMobile:50px;
+$tituloSizeTablet:100px;
+$tituloSizeDesktop:150px;
+$tituloSizexlarge:200px;
+/*subtitulo*/
+$subtituloSizeMobile:20px;
+$subtituloSizeTablet:40px;
+$subtituloSizeDesktop:60px;
+$subtituloSizexlarge:80px;
+/*párrafo*/
+$parrafoSizeMobile:13px;
+$parrafoSizeTablet:20px;
+$parrafoSizeDesktop:30px;
+$parrafoSizexlarge:40px;
+/*colores*/
+$main-color: #9061AC;
+$color2: #b48ad1;
+$color3: #d2e809;
+/*maps*/
+%tituloMobile{
+    font-family: $titulo;
+    font-size: $tituloSizeMobile;
+    color: $main-color;
+}
+%subtituloMobile{
+    font-family: $subtitulo;
+    font-size: $subtituloSizeMobile;
+    color: $main-color;
+}
+%parrafoMobile{
+    font-family: $parrafo;
+    font-size: $parrafoSizeMobile;
+    color: $main-color;
+}
+/*mixins*/
+@mixin tamaño ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin tamañoMaximo ($maxancho, $maxalto){
+    max-width: $maxancho;
+    max-height: $maxalto;
+}

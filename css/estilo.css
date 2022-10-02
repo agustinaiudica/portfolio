@@ -9,12 +9,18 @@
     background-color: #9061AC;
     color: white; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 /*variables*/
 /*titulo*/
 /*subtitulo*/
 /*párrafo*/
 /*colores*/
-/*breaking points*/
+/*maps*/
 .tituloIndex, .tituloGaleria, .tituloAgendar {
   font-family: "Prata", serif;
   font-size: 50px;
@@ -30,6 +36,8 @@ header nav .menu, .parrafoPresentacion, .parrafoQuienSoy, .parrafoQuienSoy1, .pa
   font-size: 13px;
   color: #9061AC; }
 
+/*mixins*/
+/*breaking points*/
 /* header */
 header {
   display: flex;
@@ -67,48 +75,64 @@ header {
           transition: all 0.5s; }
 
 /*footer*/
-footer {
+.footer {
   margin-top: 10px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
-  footer .fa-instagram {
+  align-items: flex-start;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .footer .fa-instagram {
     color: #9061AC; }
-  footer .fa-angle-up {
+  .footer .fa-angle-up {
     color: #9061AC; }
-  footer a {
+  .footer a {
     text-decoration: none; }
-  footer .footer-1 {
+  @media (min-width: 1021px) {
+    .footer {
+      margin-left: 30px;
+      margin-right: 30px; } }
+  .footer .footer-1 {
     font-family: 'Prata', serif;
     font-size: 0.7cm;
     color: #9061AC; }
     @media (min-width: 768px) {
-      footer .footer-1 {
+      .footer .footer-1 {
         font-size: 30px; } }
     @media (min-width: 1021px) {
-      footer .footer-1 {
+      .footer .footer-1 {
         font-size: 50px; } }
-  footer .footer-2 {
+  .footer .footer-2 {
     font-family: 'Quicksand', sans-serif;
     font-size: 0.3cm;
     color: #b48ad1; }
     @media (min-width: 768px) {
-      footer .footer-2 {
+      .footer .footer-2 {
         font-size: 20px; } }
     @media (min-width: 1021px) {
-      footer .footer-2 {
+      .footer .footer-2 {
         font-size: 30px; } }
-  footer .footer-3 {
+  .footer .footer-3 {
     display: flex;
     flex-direction: column;
     align-items: center; }
     @media (min-width: 768px) {
-      footer .footer-3 {
+      .footer .footer-3 {
         font-size: 20px; } }
     @media (min-width: 1021px) {
-      footer .footer-3 {
+      .footer .footer-3 {
         font-size: 30px; } }
+
+.copyright {
+  margin-top: 20px;
+  background-color: #9061AC;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
 
 /*index*/
 .index {
@@ -116,32 +140,93 @@ footer {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.flexIndexMobile .img-1 {
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: 10px; }
+
+@media (max-width: 481px) {
+  .flexIndexMobile {
+    display: flex;
+    flex-direction: column; } }
+
+@media (min-width: 481px) {
+  .flexIndexMobile {
+    display: none; } }
+
+@media (max-width: 481px) {
+  .flexIndexDesktop {
+    display: none; } }
+
+@media (min-width: 481px) {
+  .flexIndexDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 10px; }
+    .flexIndexDesktop img {
+      max-width: 300px;
+      max-height: 300px; } }
+
+@media (min-width: 768px) {
+  .flexIndexDesktop img {
+    max-width: 400px;
+    max-height: 400px; } }
+
+@media (min-width: 1021px) {
+  .flexIndexDesktop img {
+    margin-left: 30px;
+    max-width: 600px;
+    max-height: 600px; } }
+
 .tituloIndex {
   text-align: right;
-  line-height: -5; }
+  line-height: -5;
+  margin-right: 10px; }
   @media (min-width: 768px) {
     .tituloIndex {
       font-size: 100px; } }
   @media (min-width: 1021px) {
     .tituloIndex {
-      font-size: 150px; } }
+      font-size: 150px;
+      margin-right: 30px; } }
 
 .subtituloIndex {
-  text-align: right; }
+  text-align: right;
+  margin-right: 10px; }
   @media (min-width: 768px) {
     .subtituloIndex {
       font-size: 40px; } }
   @media (min-width: 1021px) {
     .subtituloIndex {
-      font-size: 60px; } }
+      font-size: 60px;
+      margin-right: 30px; } }
 
-@media (min-width: 768px) {
-  .parrafoPresentacion {
-    font-size: 20px; } }
+.parrafoPresentacion {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .parrafoPresentacion {
+      font-size: 20px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 50px; } }
+  @media (min-width: 1021px) {
+    .parrafoPresentacion {
+      font-size: 30px; } }
 
-@media (min-width: 1021px) {
-  .parrafoPresentacion {
-    font-size: 30px; } }
+.carousel {
+  padding: 35px; }
+
+.instagram {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (min-width: 1021px) {
+    .instagram {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 30px; } }
 
 .flexIndex {
   display: flex;
@@ -149,24 +234,6 @@ footer {
   .flexIndex img {
     width: 100%;
     height: 100%; }
-
-.img-1 {
-  max-width: 300px;
-  max-height: 300px;
-  position: relative;
-  top: -40px; }
-  @media (min-width: 768px) {
-    .img-1 {
-      max-width: 600px;
-      max-height: 600px;
-      top: -60px;
-      right: -60px; } }
-  @media (min-width: 1021px) {
-    .img-1 {
-      max-width: 800px;
-      max-height: 800px;
-      top: -150px;
-      right: -100px; } }
 
 .img-2 {
   max-width: 300px;
@@ -188,37 +255,117 @@ footer {
   h3 {
     font-size: 60px; } }
 
-/*quien soy*/
+/*quien soy
+.quienSoy {
+    background-image: url(../imagenes/background-quiensoy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.flexQuienSoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    img {
+        max-width: 100%;
+        max-width: 200px;
+    }
+}
+.parrafoQuienSoy {
+    text-align: center;
+    @extend %parrafoMobile;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+.parrafoQuienSoy1 {
+    @extend %parrafoMobile;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+.parrafoQuienSoy2 {
+    @extend %parrafoMobile;
+    text-align: right;
+    @media (min-width: $medium){
+        font-size: $parrafoSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $parrafoSizeDesktop;
+    }
+}
+.tituloQuienSoy {
+    @extend %subtituloMobile;
+    @media (min-width: $medium){
+        font-size: $subtituloSizeTablet;
+    }
+    @media (min-width: $large){
+        font-size: $subtituloSizeDesktop;
+    }
+}
+
+.img-3 {
+    max-width: 300px;
+}*/
+/*quien soy opción2*/
 .quienSoy {
   background-image: url(../imagenes/background-quiensoy.png);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden; }
 
-@media (min-width: 768px) {
-  .parrafoQuienSoy {
-    font-size: 20px; } }
+.parrafoQuienSoy {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .parrafoQuienSoy {
+      font-size: 20px; } }
+  @media (min-width: 1021px) {
+    .parrafoQuienSoy {
+      font-size: 30px; } }
 
-@media (min-width: 1021px) {
-  .parrafoQuienSoy {
-    font-size: 30px; } }
-
-@media (min-width: 768px) {
-  .parrafoQuienSoy1 {
-    font-size: 20px; } }
-
-@media (min-width: 1021px) {
-  .parrafoQuienSoy1 {
-    font-size: 30px; } }
+.parrafoQuienSoy1 {
+  margin-left: 10px; }
+  @media (min-width: 768px) {
+    .parrafoQuienSoy1 {
+      font-size: 20px;
+      margin-left: 20px; } }
+  @media (min-width: 1021px) {
+    .parrafoQuienSoy1 {
+      font-size: 30px;
+      margin-left: 30px; } }
 
 .parrafoQuienSoy2 {
+  margin-right: 10px;
   text-align: right; }
   @media (min-width: 768px) {
     .parrafoQuienSoy2 {
-      font-size: 20px; } }
+      font-size: 20px;
+      margin-right: 20px; } }
   @media (min-width: 1021px) {
     .parrafoQuienSoy2 {
-      font-size: 30px; } }
+      font-size: 30px;
+      margin-right: 30px; } }
+
+.parrafoQuienSoy3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .parrafoQuienSoy3 {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 30px; } }
+  @media (min-width: 1021px) {
+    .parrafoQuienSoy3 {
+      margin-left: 200px;
+      margin-right: 200px; } }
 
 @media (min-width: 768px) {
   .tituloQuienSoy {
@@ -228,8 +375,62 @@ footer {
   .tituloQuienSoy {
     font-size: 60px; } }
 
+.flexQuienSoy {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.flexQuienSoy2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .flexQuienSoy2 {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 30px; } }
+  @media (min-width: 1021px) {
+    .flexQuienSoy2 {
+      margin-left: 100px;
+      margin-right: 100px; } }
+  .flexQuienSoy2 img {
+    max-width: 100%;
+    max-width: 100px;
+    max-height: 100px; }
+    @media (min-width: 768px) {
+      .flexQuienSoy2 img {
+        max-width: 200px;
+        max-height: 200px; } }
+    @media (min-width: 1021px) {
+      .flexQuienSoy2 img {
+        max-width: 350px;
+        max-height: 350px; } }
+
 .img-3 {
-  max-width: 300px; }
+  max-width: 200px; }
+  @media (min-width: 768px) {
+    .img-3 {
+      max-width: 300px; } }
+  @media (min-width: 1021px) {
+    .img-3 {
+      max-width: 500px; } }
+
+.mapa {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .mapa {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 30px; } }
+  @media (min-width: 1021px) {
+    .mapa {
+      margin-left: 200px;
+      margin-right: 200px; } }
 
 /*galería*/
 @media (min-width: 768px) {
@@ -316,51 +517,31 @@ footer {
   .parrafoServicios1 {
     font-size: 30px; } }
 
-/*.gridServicios1{
-    font-family: $subtitulo;
-    font-size:$subtituloSizeMobile;
-    color: $main-color;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas:
-        "foto1 subtituloServicios1"
-        "foto1 parrafoServicios1"
-        "foto1 parrafoPrecio1"
-    img {
-        @include tamaño (100%, 100%);   
-    }
-}
-.img-9 {
-    grid-area: foto1;
-    margin-left: 15px;
-    max-width: 350px;
-    @include tamaño (100%, 100%); 
-}
-.subtituloServicios1 {
-    grid-area: subtituloServicios1;
-}
-.parrafoServicios1 {
-    grid-area: parrafoServicios1;
-}
-.parrafoPrecio1 {
-    grid-area: parrafoPrecio1;
-}*/
 /*agendar*/
 .agendar {
   background-image: url(../imagenes/background-agendar.png);
   background-repeat: no-repeat;
   background-size: cover; }
 
-@media (min-width: 768px) {
-  .tituloAgendar {
-    font-size: 100px; } }
+.tituloAgendar {
+  margin-left: 10px;
+  margin-right: 10px; }
+  @media (min-width: 768px) {
+    .tituloAgendar {
+      font-size: 100px;
+      margin-left: 30px;
+      margin-right: 30px; } }
+  @media (min-width: 1021px) {
+    .tituloAgendar {
+      font-size: 150px; } }
 
-@media (min-width: 1021px) {
-  .tituloAgendar {
-    font-size: 150px; } }
+.divFormulario {
+  margin-left: 10px;
+  margin-right: 10px; }
+  @media (min-width: 768px) {
+    .divFormulario {
+      margin-left: 30px;
+      margin-right: 30px; } }
 
 .formulario {
   border-radius: 5px; }

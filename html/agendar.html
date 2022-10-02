@@ -7,24 +7,25 @@
     <title>Agustina Iudica - Agendar</title>
     <meta name="description" content="Agendá tu turno para servicio de estética en menos de un minuto!">
     <meta name="keywords" content="Maquilladora, Maquillaje, Domicilio, CABA, Caballito, Lifting, Perfilado de cejas, Novias, Quinceañeras">
+    <meta name= "copyright" content="Agustina Iudica">
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="agendar mx-5">
+<body class="agendar">
   <header class="header" id="header">
-    <!-- Navbar Boostrap (alinear a la derecha pendiente)-->
-    <nav class="navbar navbar-expand-lg " id="inicio">
+    <!-- Navbar Boostrap-->
+    <nav class="navbar navbar-expand-lg w-100" id="inicio">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="../index.html"><img src="../imagenes/logo_personal.jpg" alt="inicio" width="40px" height="40px"></a></li>
+        <a class="navbar-brand logo" href="../index.html"><img src="../imagenes/logo_personal.jpg" alt="icono" width="40px" height="40px"></a></li>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class=" nav navbar-nav menu">
+          <ul class=" nav navbar-nav menu align-items-end">
             <li class="nav-item">
-              <a class="nav-link"  href="../html/quien_soy.html">quien soy</a>
+              <a class="nav-link"  href="../html/quien_soy.html">quién soy</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../html/galeria.html">galería</a>
@@ -40,89 +41,98 @@
       </div>
     </nav>
     <!-- Fin menú de navegación-->
-        </header>
-    <h1 class="tituloAgendar mb-3" data-aos="fade-up" data-aos-duration="1000">agendá tu turno</h1>
-<!--Inicio formulario bootstrap-->
-<form class="row g-3" data-aos="fade-up">
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label parrafoAgendar mt-2 mb-2">Nombre</label>
-      <input type="email" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label parrafoAgendar mt-2 mb-2">Apellido</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-md-6">
+  </header>
+    <h1 class="tituloAgendar" data-aos="fade-up" data-aos-duration="1000">agendá tu turno</h1>
+    <!--Inicio formulario bootstrap-->
+    <form class="row g-3 divFormulario" data-aos="fade-up">
+        <!--Insertar nombre -->
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label parrafoAgendar mt-2 mb-2">Nombre</label>
+        <input type="email" class="form-control formulario" id="inputEmail4">
+      </div>
+       <!--Insertar Apellido -->
+       <div class="col-md-6">
+        <label for="inputPassword4" class="form-label parrafoAgendar mt-2 mb-2">Apellido</label>
+        <input type="password" class="form-control formulario" id="inputPassword4">
+      </div>
+        <!--Insertar usuario de instagram -->
+      <div class="col-md-6">
         <label for="inputEmail4" class="form-label parrafoAgendar mt-2 mb-2">Usuario de Instagram</label>
         <div class="input-group">
-            <div class="input-group-text">@</div>
-            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-          </div>
+          <div class="input-group-text">@</div>
+          <input type="text" class="form-control formulario" id="inlineFormInputGroupUsername" placeholder="Username">
+        </div>
       </div>
+  <!--Insertar teléfono -->    
       <div class="col-md-6">
         <label for="inputPassword4" class="form-label parrafoAgendar mt-2 mb-2">Teléfono</label>
-        <input type="password" class="form-control" id="inputPassword4">
+        <input type="password" class="form-control formulario" id="inputPassword4" placeholder="+54 011 1111-1111">
       </div>
-    <p class="parrafoAgendar mt-2 mb-2">Seleccioná el servicio:</p>
-    <select class="col-md-6 form-select" aria-label="Default select example" >
+      <!--Seleccionar servicio -->
+      <p class="parrafoAgendar mt-2 mb-2">Seleccioná el servicio:</p>
+      <select class="col-md-6 form-select" aria-label="Default select example" >
         <option selected>Maquillaje social</option>
         <option value="1">Perfilado de cejas</option>
         <option value="2">Lash lifting</option>
         <option value="3">Maquillaje social a domicilio</option>
       </select>
+  <!--Seleccionar cantidad de personas-->
       <p class="parrafoAgendar">Cantidad de personas:</p>
-    <select class="col-md-6 form-select" aria-label="Default select example" >
+      <select class="col-md-6 form-select" aria-label="Default select example" >
         <option selected>1</option>
         <option value="1">2</option>
         <option value="2">3</option>
         <option value="3">4</option>
       </select>
+  <!--Seleccionar día y horario-->
       <p class="parrafoAgendar col-md-6 ">seleccioná un día:</p>
       <input type="date" id="dia" name="dia"
              value="2022-07-22"
-             min="2022-07-22" max="2022-12-31" class="formulario">
+             min="2022-07-22" max="2022-12-31" class="formulario ">
       <p class="parrafoAgendar col-md-6 ">seleccioná un horario:</p>
       <input type="time" id="horario" name="horario"
              min="07:00" max="20:00" required class="formulario"> 
-    <div class="col-md-6">
-      <label for="inputAddress" class="form-label parrafoAgendar">Dirección</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Nombre de calle 123">
-    </div>
-    
+      <!--Insertar dirección -->       
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label parrafoAgendar">Dirección</label>
+        <input type="text" class="form-control formulario" id="inputAddress" placeholder="Nombre de calle 123">
       </div>
     </div>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label parrafoAgendar">Comentarios</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-secondary bg-light parrafoAgendar mt-3">Agendar</button>
-    </div>
-  </form>
-
+  </div>
+  <!--Insertar comentarios -->
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label parrafoAgendar">Comentarios</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-secondary bg-light parrafoAgendar mt-3">Agendar</button>
+  </div>
+</form>
 <!--Fin formulario-->
 
-<!--Inicio footer-->
-<footer>
-    <div>
-        <p class="footer-1">contactame</p>
-<p class="footer-2">agus.iudi@gmail.com</p>
-<p class="footer-2">+54 011 6666-6666</p>
-<a href="https://www.instagram.com/agustinaiudica/?hl=es" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-    </div>
-
-    <div class="footer-3">
-      <a href="#header"><i class="fa-solid fa-angle-up"></i></a>
-      <a href="#header"><p class="footer-2">Volver arriba</p></a>
-    </div>
-
-</footer>
-<!--Fin footer-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+    <!--Inicio footer-->
+    <footer class="">
+      <div class="footer">
+        <div>
+          <p class="footer-1">contactame</p>
+          <p class="footer-2">agus.iudi@gmail.com</p>
+          <p class="footer-2">+54 011 6666-6666</p>
+          <a href="https://www.instagram.com/agustinaiudica/?hl=es" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+      </div>
+    
+      <div class="footer-3">
+          <a href="#header"><i class="fa-solid fa-angle-up"></i></a>
+          <a href="#header"><p class="footer-2">Volver arriba</p></a>
+      </div>
+      </div>
+      <p class="copyright">© 2022 AGUSTINAIUDICA.COM.AR ALL RIGHTS RESERVED</p>  
+    </footer>
+    <!--Fin footer-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
     AOS.init();
-  </script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-   <script src="https://kit.fontawesome.com/e23f28a1a2.js" crossorigin="anonymous"></script>
-</body>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e23f28a1a2.js" crossorigin="anonymous"></script>
+  </body>
 </html>
